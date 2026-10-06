@@ -44,6 +44,30 @@ ul.skill-list li::before { content: "> "; color: var(--accent); font-family: var
 
 article { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 1.25rem; margin-bottom: 1rem; }
 a { color: var(--accent); }
+
+/* Code Window UI */
+.code-window { background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.code-header { background: #1a1a1a; padding: 0.5rem 1rem; display: flex; align-items: center; border-bottom: 1px solid #333; }
+.code-dots { display: flex; gap: 6px; margin-right: 1rem; }
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot.red { background: #ff5f56; } .dot.yellow { background: #ffbd2e; } .dot.green { background: #27c93f; }
+.code-title { color: #888; font-family: var(--font-mono); font-size: 0.85rem; }
+.code-body { padding: 1.5rem; font-family: var(--font-mono); color: #a9b7c6; font-size: 0.9rem; }
+.code-body .keyword { color: #cc7832; } .code-body .string { color: #6a8759; }
+
+/* Grids & Badges */
+.skills-wrapper { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.badge { background: var(--card-bg); color: var(--text-main); border: 1px solid var(--accent); padding: 0.35rem 0.85rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.875rem; }
+
+.values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+.value-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; }
+.value-card h3 { color: var(--accent); margin-bottom: 0.5rem; font-family: var(--font-mono); }
+
+.footer-hero { text-align: center; background: var(--card-bg); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color); }
+.footer-hero h3 { margin-bottom: 1rem; }
+.btn { display: inline-block; padding: 0.6rem 1.2rem; border-radius: 4px; text-decoration: none; font-weight: 500; }
+.btn-outline { border: 1px solid var(--accent); color: var(--accent); font-family: var(--font-mono); }
+.btn-outline:hover { background: rgba(16, 185, 129, 0.15); }
 footer { text-align: center; padding-top: 2rem; border-top: 1px solid var(--border-color); font-size: 0.875rem; color: var(--text-muted); }
 </style>
 </head>
